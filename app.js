@@ -1,18 +1,18 @@
 let listaNumerosSorteados = [];
-let quantidadeMaxima= 100;
+let quantidadeMaxima= 50;
 let numeroSecreto  = gerarNumeroAleatorio();
 let tentativas = 1;
 console.log(numeroSecreto);
 
 function exibirMensagemInicial() {
     exibirTextoNaTela('h1', 'Jogo do número secreto');
-    exibirTextoNaTela('p', 'Escolha o numero de 1 a 100:');
+    exibirTextoNaTela('p', 'Escolha o numero de 1 a 50:');
 }
 
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.25});
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.23});
 }
 exibirMensagemInicial();
 function verificarChute() {
